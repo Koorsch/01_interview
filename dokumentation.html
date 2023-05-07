@@ -1,28 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="media/berg_bw.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital@1&family=Montserrat&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Dokumentation - Generell information og layoutdiagrammer</title>
 </head>
 
 <body>
     <header>
-        <nav>
-
+        <nav id="menu">
+            <div id="logo">
+                <a href="index.html" title="Back to Start">
+                    <img src="media/berg_bw.svg" alt="Berg">
+                </a>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="media.html">
+                            <h3>Media</h3>
+                        </a></li>
+                    <li><a class="here" href="dokumentation.html">
+                            <h3>Dokumentation</h3>
+                        </a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
+        <section>
+            <h1>Dokumentationen! VIGTIGT VIGTIGT! Under konstruktion.........</h1>
+            <p>Herunder finder du lige om lidt diagrammer og forskellig information</p>
 
-        <!--
-    HUSK LAYOUTDIAGRAM
--->
+            <article class="info">
+                <div>
+                    <h2>#Info</h2>
+                    <p></p>
+                </div>
+            </article>
+            <article id="about">
+                <div>
+                    <h2>#About</h2>
+                </div>
+            </article>
+            <article>
+                <h2>#Diagrammer</h2>
+                <div id="diagram">
+                    <div><img src="media/index.drawio.png" alt="Index - layoutdiagram"></div>
+                    <div><img src="media/media.drawio.png" alt="Media - layoutdiagram"></div>
+                    <div><img src="media/dokumentation.drawio.png" alt="Dokumentation - layoutdiagram"></div>
+                </div>
+                <img src="media/legend.drawio.png" alt="Beskrivelse">
+            </article>
+        </section>
     </main>
     <footer>
-
+        <h3>Andreas Ekvall-Hofvander // Passion for Berg 2023</h3>
     </footer>
 </body>
 

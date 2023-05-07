@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+h1 {
+  font-family: "Averia Libre", cursive;
+}
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "PT Sans", sans-serif;
+}
+body {
+  max-width: 1600px;
+  min-width: 370px;
+  margin: auto;
+  background-color: #4169e1;
+  padding: 30px;
+  hyphens: none;
+  scroll-behavior: smooth;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: lightgrey;
+}
+a:visited,
+a:link {
+  text-decoration: none;
+}
+#navbar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#menu img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left;
+}
+li a {
+  justify-content: center;
+  display: block;
+  text-align: center;
+  padding: 8px 20px;
+}
+#info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+article {
+  padding: 5px;
+}
+article > h2 {
+  padding: 15px;
+  text-decoration: underline 2px;
+}
+article > img {
+  padding-top: 10px;
+}
+#diagram {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#diagram > div {
+  border: solid 3px white;
+  background-color: white;
+  border-radius: 5px;
+}
+#diagram > div > img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: 0%;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.here {
+  color: grey;
+}
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 1200px) {
+  #diagram {
+    grid-template-columns: 1fr;
+  }
+}

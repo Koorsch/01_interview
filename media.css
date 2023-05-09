@@ -6,9 +6,10 @@ video {
 #video {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  padding: 10px;
-  margin-bottom: 30px;
+  gap: 5px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
 }
 #video div > h3 {
   text-align: center;
@@ -28,20 +29,39 @@ iframe {
 .galleri {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   flex-grow: 1;
-  gap: 10px;
+  gap: 3px;
+  margin: 10px 0 10px 0;
 }
-.galleri img {
-  height: 40vh;
-  max-height: 400px;
-  min-width: 150px;
+
+.galleri > img {
+  flex-basis: calc(10.666% - 5px);
+  justify-content: stretch;
+  min-height: 400px;
+  min-width: 400px;
+  background: white;
+  color: white;
+  padding: 2px;
+  border-radius: 4px;
+  box-sizing: border-box;
   object-fit: cover;
-  vertical-align: bottom;
-  border-radius: 5px;
-  border: solid 2px;
 }
 @media (max-width: 1200px) {
+  .galleri {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1259px) {
   #video {
+    grid-template-columns: 1fr;
+  }
+  .galleri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 660px) {
+  .galleri {
     grid-template-columns: 1fr;
   }
 }

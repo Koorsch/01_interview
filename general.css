@@ -16,17 +16,11 @@ p {
 }
 body {
   max-width: 1600px;
-  min-width: 370px;
   margin: auto;
-  background-color: #4169e1;
+  background-color: black;
   padding: 30px;
   hyphens: none;
   scroll-behavior: smooth;
-}
-.ch0nkhr {
-  border: 2px solid white;
-  border-radius: 2px;
-  margin-bottom: 5px;
 }
 a {
   color: white;
@@ -49,16 +43,22 @@ a:link {
   justify-content: center;
   align-items: center;
   padding-bottom: 15px;
+  width: 100%;
 }
-#menu img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-#logo {
-  width: max-content;
+#menu {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  width: 100%;
   margin: auto;
 }
+#menu > :nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  height: 125px;
+}
+
 ul {
   list-style: none;
   text-align: center;
@@ -93,7 +93,7 @@ article > img {
 }
 #diagram {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 #diagram > div {
@@ -122,9 +122,19 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-
 @media (max-width: 1200px) {
   #diagram {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  #diagram {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  ul li a {
+    font-size: smaller;
   }
 }
